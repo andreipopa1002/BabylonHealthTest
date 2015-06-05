@@ -11,12 +11,12 @@
 		C90F48431B21C5D000B4FBBD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C90F48421B21C5D000B4FBBD /* main.m */; };
 		C90F48461B21C5D000B4FBBD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C90F48451B21C5D000B4FBBD /* AppDelegate.m */; };
 		C90F48491B21C5D000B4FBBD /* BabylonHealthTest.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C90F48471B21C5D000B4FBBD /* BabylonHealthTest.xcdatamodeld */; };
-		C90F484C1B21C5D000B4FBBD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C90F484B1B21C5D000B4FBBD /* ViewController.m */; };
-		C90F484F1B21C5D000B4FBBD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C90F484D1B21C5D000B4FBBD /* Main.storyboard */; };
 		C90F48511B21C5D000B4FBBD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C90F48501B21C5D000B4FBBD /* Images.xcassets */; };
 		C90F48541B21C5D000B4FBBD /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C90F48521B21C5D000B4FBBD /* LaunchScreen.xib */; };
 		C90F48601B21C5D000B4FBBD /* BabylonHealthTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C90F485F1B21C5D000B4FBBD /* BabylonHealthTestTests.m */; };
 		C90F486A1B21C5FD00B4FBBD /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = C90F48691B21C5FD00B4FBBD /* Podfile */; };
+		C90F486E1B21CC0900B4FBBD /* BHApiClient.m in Sources */ = {isa = PBXBuildFile; fileRef = C90F486D1B21CC0900B4FBBD /* BHApiClient.m */; };
+		C90F48731B21D1C400B4FBBD /* BHBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C90F48721B21D1C400B4FBBD /* BHBaseViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,15 +39,16 @@
 		C90F48441B21C5D000B4FBBD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		C90F48451B21C5D000B4FBBD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		C90F48481B21C5D000B4FBBD /* BabylonHealthTest.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BabylonHealthTest.xcdatamodel; sourceTree = "<group>"; };
-		C90F484A1B21C5D000B4FBBD /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		C90F484B1B21C5D000B4FBBD /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		C90F484E1B21C5D000B4FBBD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C90F48501B21C5D000B4FBBD /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		C90F48531B21C5D000B4FBBD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		C90F48591B21C5D000B4FBBD /* BabylonHealthTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BabylonHealthTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C90F485E1B21C5D000B4FBBD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C90F485F1B21C5D000B4FBBD /* BabylonHealthTestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BabylonHealthTestTests.m; sourceTree = "<group>"; };
 		C90F48691B21C5FD00B4FBBD /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		C90F486C1B21CC0900B4FBBD /* BHApiClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BHApiClient.h; sourceTree = "<group>"; };
+		C90F486D1B21CC0900B4FBBD /* BHApiClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BHApiClient.m; sourceTree = "<group>"; };
+		C90F48711B21D1C400B4FBBD /* BHBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BHBaseViewController.h; sourceTree = "<group>"; };
+		C90F48721B21D1C400B4FBBD /* BHBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BHBaseViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,11 +111,11 @@
 		C90F483F1B21C5D000B4FBBD /* BabylonHealthTest */ = {
 			isa = PBXGroup;
 			children = (
+				C90F48701B21D17200B4FBBD /* ViewControllers */,
+				C90F486F1B21D15500B4FBBD /* Model */,
+				C90F486B1B21CBB500B4FBBD /* NetworkLayer */,
 				C90F48441B21C5D000B4FBBD /* AppDelegate.h */,
 				C90F48451B21C5D000B4FBBD /* AppDelegate.m */,
-				C90F484A1B21C5D000B4FBBD /* ViewController.h */,
-				C90F484B1B21C5D000B4FBBD /* ViewController.m */,
-				C90F484D1B21C5D000B4FBBD /* Main.storyboard */,
 				C90F48501B21C5D000B4FBBD /* Images.xcassets */,
 				C90F48521B21C5D000B4FBBD /* LaunchScreen.xib */,
 				C90F48471B21C5D000B4FBBD /* BabylonHealthTest.xcdatamodeld */,
@@ -147,6 +148,31 @@
 				C90F485E1B21C5D000B4FBBD /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C90F486B1B21CBB500B4FBBD /* NetworkLayer */ = {
+			isa = PBXGroup;
+			children = (
+				C90F486C1B21CC0900B4FBBD /* BHApiClient.h */,
+				C90F486D1B21CC0900B4FBBD /* BHApiClient.m */,
+			);
+			path = NetworkLayer;
+			sourceTree = "<group>";
+		};
+		C90F486F1B21D15500B4FBBD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C90F48701B21D17200B4FBBD /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				C90F48711B21D1C400B4FBBD /* BHBaseViewController.h */,
+				C90F48721B21D1C400B4FBBD /* BHBaseViewController.m */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,7 +257,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C90F484F1B21C5D000B4FBBD /* Main.storyboard in Resources */,
 				C90F48541B21C5D000B4FBBD /* LaunchScreen.xib in Resources */,
 				C90F486A1B21C5FD00B4FBBD /* Podfile in Resources */,
 				C90F48511B21C5D000B4FBBD /* Images.xcassets in Resources */,
@@ -285,10 +310,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C90F486E1B21CC0900B4FBBD /* BHApiClient.m in Sources */,
 				C90F48461B21C5D000B4FBBD /* AppDelegate.m in Sources */,
 				C90F48431B21C5D000B4FBBD /* main.m in Sources */,
-				C90F484C1B21C5D000B4FBBD /* ViewController.m in Sources */,
 				C90F48491B21C5D000B4FBBD /* BabylonHealthTest.xcdatamodeld in Sources */,
+				C90F48731B21D1C400B4FBBD /* BHBaseViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -311,14 +337,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		C90F484D1B21C5D000B4FBBD /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C90F484E1B21C5D000B4FBBD /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		C90F48521B21C5D000B4FBBD /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
