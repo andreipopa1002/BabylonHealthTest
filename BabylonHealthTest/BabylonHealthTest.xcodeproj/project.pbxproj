@@ -20,6 +20,10 @@
 		C90F48761B21D34800B4FBBD /* BHFlowManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C90F48751B21D34800B4FBBD /* BHFlowManager.m */; };
 		C90F48801B21D3A900B4FBBD /* BHContactsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C90F487E1B21D3A900B4FBBD /* BHContactsViewController.m */; };
 		C90F48811B21D3A900B4FBBD /* BHContactsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C90F487F1B21D3A900B4FBBD /* BHContactsViewController.xib */; };
+		C90F48871B21DCD500B4FBBD /* BHContactDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C90F48851B21DCD500B4FBBD /* BHContactDetailsViewController.m */; };
+		C90F48881B21DCD500B4FBBD /* BHContactDetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C90F48861B21DCD500B4FBBD /* BHContactDetailsViewController.xib */; };
+		C9EB69AB1B21E2BE0024A251 /* BHContactDetails.m in Sources */ = {isa = PBXBuildFile; fileRef = C9EB69A81B21E2BE0024A251 /* BHContactDetails.m */; };
+		C9EB69AC1B21E2BE0024A251 /* BHContact.m in Sources */ = {isa = PBXBuildFile; fileRef = C9EB69AA1B21E2BE0024A251 /* BHContact.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +61,13 @@
 		C90F487D1B21D3A900B4FBBD /* BHContactsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BHContactsViewController.h; sourceTree = "<group>"; };
 		C90F487E1B21D3A900B4FBBD /* BHContactsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BHContactsViewController.m; sourceTree = "<group>"; };
 		C90F487F1B21D3A900B4FBBD /* BHContactsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BHContactsViewController.xib; sourceTree = "<group>"; };
+		C90F48841B21DCD500B4FBBD /* BHContactDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BHContactDetailsViewController.h; sourceTree = "<group>"; };
+		C90F48851B21DCD500B4FBBD /* BHContactDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BHContactDetailsViewController.m; sourceTree = "<group>"; };
+		C90F48861B21DCD500B4FBBD /* BHContactDetailsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BHContactDetailsViewController.xib; sourceTree = "<group>"; };
+		C9EB69A71B21E2BE0024A251 /* BHContactDetails.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BHContactDetails.h; path = BabylonHealthTest/Model/BHContactDetails.h; sourceTree = SOURCE_ROOT; };
+		C9EB69A81B21E2BE0024A251 /* BHContactDetails.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BHContactDetails.m; path = BabylonHealthTest/Model/BHContactDetails.m; sourceTree = SOURCE_ROOT; };
+		C9EB69A91B21E2BE0024A251 /* BHContact.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BHContact.h; path = BabylonHealthTest/Model/BHContact.h; sourceTree = SOURCE_ROOT; };
+		C9EB69AA1B21E2BE0024A251 /* BHContact.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BHContact.m; path = BabylonHealthTest/Model/BHContact.m; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -172,14 +183,20 @@
 		C90F486F1B21D15500B4FBBD /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				C9EB69A71B21E2BE0024A251 /* BHContactDetails.h */,
+				C9EB69A81B21E2BE0024A251 /* BHContactDetails.m */,
+				C9EB69A91B21E2BE0024A251 /* BHContact.h */,
+				C9EB69AA1B21E2BE0024A251 /* BHContact.m */,
 			);
-			path = Model;
+			name = Model;
+			path = ../../../../../Model;
 			sourceTree = "<group>";
 		};
 		C90F48701B21D17200B4FBBD /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
 				C90F48771B21D35900B4FBBD /* Contacts */,
+				C90F48831B21DC5F00B4FBBD /* ContactDetails */,
 				C90F48711B21D1C400B4FBBD /* BHBaseViewController.h */,
 				C90F48721B21D1C400B4FBBD /* BHBaseViewController.m */,
 			);
@@ -194,6 +211,16 @@
 				C90F487F1B21D3A900B4FBBD /* BHContactsViewController.xib */,
 			);
 			path = Contacts;
+			sourceTree = "<group>";
+		};
+		C90F48831B21DC5F00B4FBBD /* ContactDetails */ = {
+			isa = PBXGroup;
+			children = (
+				C90F48841B21DCD500B4FBBD /* BHContactDetailsViewController.h */,
+				C90F48851B21DCD500B4FBBD /* BHContactDetailsViewController.m */,
+				C90F48861B21DCD500B4FBBD /* BHContactDetailsViewController.xib */,
+			);
+			path = ContactDetails;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -278,6 +305,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C90F48881B21DCD500B4FBBD /* BHContactDetailsViewController.xib in Resources */,
 				C90F48541B21C5D000B4FBBD /* LaunchScreen.xib in Resources */,
 				C90F48811B21D3A900B4FBBD /* BHContactsViewController.xib in Resources */,
 				C90F486A1B21C5FD00B4FBBD /* Podfile in Resources */,
@@ -334,10 +362,13 @@
 			files = (
 				C90F486E1B21CC0900B4FBBD /* BHApiClient.m in Sources */,
 				C90F48461B21C5D000B4FBBD /* AppDelegate.m in Sources */,
+				C9EB69AC1B21E2BE0024A251 /* BHContact.m in Sources */,
 				C90F48431B21C5D000B4FBBD /* main.m in Sources */,
 				C90F48491B21C5D000B4FBBD /* BabylonHealthTest.xcdatamodeld in Sources */,
+				C90F48871B21DCD500B4FBBD /* BHContactDetailsViewController.m in Sources */,
 				C90F48731B21D1C400B4FBBD /* BHBaseViewController.m in Sources */,
 				C90F48801B21D3A900B4FBBD /* BHContactsViewController.m in Sources */,
+				C9EB69AB1B21E2BE0024A251 /* BHContactDetails.m in Sources */,
 				C90F48761B21D34800B4FBBD /* BHFlowManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
