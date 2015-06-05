@@ -1,0 +1,517 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9E083AF5BC917EC74EB4EB1E /* libPods-BabylonHealthTest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 589B578EC4B1189996CF6CE5 /* libPods-BabylonHealthTest.a */; };
+		C90F48431B21C5D000B4FBBD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C90F48421B21C5D000B4FBBD /* main.m */; };
+		C90F48461B21C5D000B4FBBD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C90F48451B21C5D000B4FBBD /* AppDelegate.m */; };
+		C90F48491B21C5D000B4FBBD /* BabylonHealthTest.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C90F48471B21C5D000B4FBBD /* BabylonHealthTest.xcdatamodeld */; };
+		C90F484C1B21C5D000B4FBBD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C90F484B1B21C5D000B4FBBD /* ViewController.m */; };
+		C90F484F1B21C5D000B4FBBD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C90F484D1B21C5D000B4FBBD /* Main.storyboard */; };
+		C90F48511B21C5D000B4FBBD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C90F48501B21C5D000B4FBBD /* Images.xcassets */; };
+		C90F48541B21C5D000B4FBBD /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C90F48521B21C5D000B4FBBD /* LaunchScreen.xib */; };
+		C90F48601B21C5D000B4FBBD /* BabylonHealthTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C90F485F1B21C5D000B4FBBD /* BabylonHealthTestTests.m */; };
+		C90F486A1B21C5FD00B4FBBD /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = C90F48691B21C5FD00B4FBBD /* Podfile */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C90F485A1B21C5D000B4FBBD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C90F48351B21C5CF00B4FBBD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C90F483C1B21C5D000B4FBBD;
+			remoteInfo = BabylonHealthTest;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		502CA7FA1C2AC8F1C220A06E /* Pods-BabylonHealthTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BabylonHealthTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-BabylonHealthTest/Pods-BabylonHealthTest.release.xcconfig"; sourceTree = "<group>"; };
+		589B578EC4B1189996CF6CE5 /* libPods-BabylonHealthTest.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BabylonHealthTest.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AFBA685EC051C3ABE7932BED /* Pods-BabylonHealthTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BabylonHealthTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BabylonHealthTest/Pods-BabylonHealthTest.debug.xcconfig"; sourceTree = "<group>"; };
+		C90F483D1B21C5D000B4FBBD /* BabylonHealthTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BabylonHealthTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C90F48411B21C5D000B4FBBD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C90F48421B21C5D000B4FBBD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C90F48441B21C5D000B4FBBD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		C90F48451B21C5D000B4FBBD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		C90F48481B21C5D000B4FBBD /* BabylonHealthTest.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BabylonHealthTest.xcdatamodel; sourceTree = "<group>"; };
+		C90F484A1B21C5D000B4FBBD /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		C90F484B1B21C5D000B4FBBD /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		C90F484E1B21C5D000B4FBBD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C90F48501B21C5D000B4FBBD /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		C90F48531B21C5D000B4FBBD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		C90F48591B21C5D000B4FBBD /* BabylonHealthTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BabylonHealthTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C90F485E1B21C5D000B4FBBD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C90F485F1B21C5D000B4FBBD /* BabylonHealthTestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BabylonHealthTestTests.m; sourceTree = "<group>"; };
+		C90F48691B21C5FD00B4FBBD /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C90F483A1B21C5D000B4FBBD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9E083AF5BC917EC74EB4EB1E /* libPods-BabylonHealthTest.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C90F48561B21C5D000B4FBBD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0E92041078F486E6FC5749C8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AFBA685EC051C3ABE7932BED /* Pods-BabylonHealthTest.debug.xcconfig */,
+				502CA7FA1C2AC8F1C220A06E /* Pods-BabylonHealthTest.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		3DA1E275125D77F5193BE40F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				589B578EC4B1189996CF6CE5 /* libPods-BabylonHealthTest.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C90F48341B21C5CF00B4FBBD = {
+			isa = PBXGroup;
+			children = (
+				C90F48691B21C5FD00B4FBBD /* Podfile */,
+				C90F483F1B21C5D000B4FBBD /* BabylonHealthTest */,
+				C90F485C1B21C5D000B4FBBD /* BabylonHealthTestTests */,
+				C90F483E1B21C5D000B4FBBD /* Products */,
+				0E92041078F486E6FC5749C8 /* Pods */,
+				3DA1E275125D77F5193BE40F /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		C90F483E1B21C5D000B4FBBD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C90F483D1B21C5D000B4FBBD /* BabylonHealthTest.app */,
+				C90F48591B21C5D000B4FBBD /* BabylonHealthTestTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C90F483F1B21C5D000B4FBBD /* BabylonHealthTest */ = {
+			isa = PBXGroup;
+			children = (
+				C90F48441B21C5D000B4FBBD /* AppDelegate.h */,
+				C90F48451B21C5D000B4FBBD /* AppDelegate.m */,
+				C90F484A1B21C5D000B4FBBD /* ViewController.h */,
+				C90F484B1B21C5D000B4FBBD /* ViewController.m */,
+				C90F484D1B21C5D000B4FBBD /* Main.storyboard */,
+				C90F48501B21C5D000B4FBBD /* Images.xcassets */,
+				C90F48521B21C5D000B4FBBD /* LaunchScreen.xib */,
+				C90F48471B21C5D000B4FBBD /* BabylonHealthTest.xcdatamodeld */,
+				C90F48401B21C5D000B4FBBD /* Supporting Files */,
+			);
+			path = BabylonHealthTest;
+			sourceTree = "<group>";
+		};
+		C90F48401B21C5D000B4FBBD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C90F48411B21C5D000B4FBBD /* Info.plist */,
+				C90F48421B21C5D000B4FBBD /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C90F485C1B21C5D000B4FBBD /* BabylonHealthTestTests */ = {
+			isa = PBXGroup;
+			children = (
+				C90F485F1B21C5D000B4FBBD /* BabylonHealthTestTests.m */,
+				C90F485D1B21C5D000B4FBBD /* Supporting Files */,
+			);
+			path = BabylonHealthTestTests;
+			sourceTree = "<group>";
+		};
+		C90F485D1B21C5D000B4FBBD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C90F485E1B21C5D000B4FBBD /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C90F483C1B21C5D000B4FBBD /* BabylonHealthTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C90F48631B21C5D000B4FBBD /* Build configuration list for PBXNativeTarget "BabylonHealthTest" */;
+			buildPhases = (
+				65619A9A3E0F3A0095CC4D5C /* Check Pods Manifest.lock */,
+				C90F48391B21C5D000B4FBBD /* Sources */,
+				C90F483A1B21C5D000B4FBBD /* Frameworks */,
+				C90F483B1B21C5D000B4FBBD /* Resources */,
+				FAAB357585D37EA5F93CDC02 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BabylonHealthTest;
+			productName = BabylonHealthTest;
+			productReference = C90F483D1B21C5D000B4FBBD /* BabylonHealthTest.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C90F48581B21C5D000B4FBBD /* BabylonHealthTestTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C90F48661B21C5D000B4FBBD /* Build configuration list for PBXNativeTarget "BabylonHealthTestTests" */;
+			buildPhases = (
+				C90F48551B21C5D000B4FBBD /* Sources */,
+				C90F48561B21C5D000B4FBBD /* Frameworks */,
+				C90F48571B21C5D000B4FBBD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C90F485B1B21C5D000B4FBBD /* PBXTargetDependency */,
+			);
+			name = BabylonHealthTestTests;
+			productName = BabylonHealthTestTests;
+			productReference = C90F48591B21C5D000B4FBBD /* BabylonHealthTestTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C90F48351B21C5CF00B4FBBD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = "Popa Andrei";
+				TargetAttributes = {
+					C90F483C1B21C5D000B4FBBD = {
+						CreatedOnToolsVersion = 6.3.2;
+					};
+					C90F48581B21C5D000B4FBBD = {
+						CreatedOnToolsVersion = 6.3.2;
+						TestTargetID = C90F483C1B21C5D000B4FBBD;
+					};
+				};
+			};
+			buildConfigurationList = C90F48381B21C5CF00B4FBBD /* Build configuration list for PBXProject "BabylonHealthTest" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C90F48341B21C5CF00B4FBBD;
+			productRefGroup = C90F483E1B21C5D000B4FBBD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C90F483C1B21C5D000B4FBBD /* BabylonHealthTest */,
+				C90F48581B21C5D000B4FBBD /* BabylonHealthTestTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C90F483B1B21C5D000B4FBBD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C90F484F1B21C5D000B4FBBD /* Main.storyboard in Resources */,
+				C90F48541B21C5D000B4FBBD /* LaunchScreen.xib in Resources */,
+				C90F486A1B21C5FD00B4FBBD /* Podfile in Resources */,
+				C90F48511B21C5D000B4FBBD /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C90F48571B21C5D000B4FBBD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		65619A9A3E0F3A0095CC4D5C /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		FAAB357585D37EA5F93CDC02 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BabylonHealthTest/Pods-BabylonHealthTest-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C90F48391B21C5D000B4FBBD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C90F48461B21C5D000B4FBBD /* AppDelegate.m in Sources */,
+				C90F48431B21C5D000B4FBBD /* main.m in Sources */,
+				C90F484C1B21C5D000B4FBBD /* ViewController.m in Sources */,
+				C90F48491B21C5D000B4FBBD /* BabylonHealthTest.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C90F48551B21C5D000B4FBBD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C90F48601B21C5D000B4FBBD /* BabylonHealthTestTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C90F485B1B21C5D000B4FBBD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C90F483C1B21C5D000B4FBBD /* BabylonHealthTest */;
+			targetProxy = C90F485A1B21C5D000B4FBBD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C90F484D1B21C5D000B4FBBD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C90F484E1B21C5D000B4FBBD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C90F48521B21C5D000B4FBBD /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C90F48531B21C5D000B4FBBD /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C90F48611B21C5D000B4FBBD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C90F48621B21C5D000B4FBBD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C90F48641B21C5D000B4FBBD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AFBA685EC051C3ABE7932BED /* Pods-BabylonHealthTest.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = BabylonHealthTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		C90F48651B21C5D000B4FBBD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 502CA7FA1C2AC8F1C220A06E /* Pods-BabylonHealthTest.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = BabylonHealthTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		C90F48671B21C5D000B4FBBD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = BabylonHealthTestTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BabylonHealthTest.app/BabylonHealthTest";
+			};
+			name = Debug;
+		};
+		C90F48681B21C5D000B4FBBD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = BabylonHealthTestTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BabylonHealthTest.app/BabylonHealthTest";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C90F48381B21C5CF00B4FBBD /* Build configuration list for PBXProject "BabylonHealthTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C90F48611B21C5D000B4FBBD /* Debug */,
+				C90F48621B21C5D000B4FBBD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C90F48631B21C5D000B4FBBD /* Build configuration list for PBXNativeTarget "BabylonHealthTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C90F48641B21C5D000B4FBBD /* Debug */,
+				C90F48651B21C5D000B4FBBD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C90F48661B21C5D000B4FBBD /* Build configuration list for PBXNativeTarget "BabylonHealthTestTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C90F48671B21C5D000B4FBBD /* Debug */,
+				C90F48681B21C5D000B4FBBD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		C90F48471B21C5D000B4FBBD /* BabylonHealthTest.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				C90F48481B21C5D000B4FBBD /* BabylonHealthTest.xcdatamodel */,
+			);
+			currentVersion = C90F48481B21C5D000B4FBBD /* BabylonHealthTest.xcdatamodel */;
+			path = BabylonHealthTest.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = C90F48351B21C5CF00B4FBBD /* Project object */;
+}

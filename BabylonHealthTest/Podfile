@@ -1,0 +1,9 @@
+# platform :ios, '7.0'
+
+target 'BabylonHealthTest' do
+pod 'AFNetworking', '~> 2.0'
+end
+
+target 'BabylonHealthTest' do
+
+end
