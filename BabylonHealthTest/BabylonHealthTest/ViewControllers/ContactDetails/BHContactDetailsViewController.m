@@ -25,6 +25,7 @@ static CGFloat const kNumberOfRows = 6;
 @property (nonatomic, weak, readwrite) IBOutlet UITableView *tableView;
 
 @property (nonatomic, strong, readwrite) BHContact *contact;
+@property (nonatomic, strong, readwrite) NSDateFormatter *formatter;
 
 @end
 
@@ -63,7 +64,6 @@ static CGFloat const kNumberOfRows = 6;
 }
 
 # pragma mark - Internal Methods
-
 - (void)customizeCell:(UITableViewCell *)cell atIndexPath:(NSIndexPath *)indexPath {
     if (indexPath.row == kNameRow) {
         [cell.imageView setImageWithURL:[NSURL URLWithString:self.contact.avatarURL] placeholderImage:[UIImage imageNamed:@"placeholder"]];
@@ -79,16 +79,21 @@ static CGFloat const kNumberOfRows = 6;
         cell.textLabel.text = NSLocalizedString(@"Email", nil);
         cell.detailTextLabel.text = self.contact.contactDetails.email;
     } else if (indexPath.row == kCreatedAtRow) {
-        NSDateFormatter *formatter = [NSDateFormatter new];
-        formatter.dateFormat = @"yyyy-mm-dd MM:hh:ss";
         cell.textLabel.text = NSLocalizedString(@"Created at", nil);
-        cell.detailTextLabel.text = [formatter stringFromDate:self.contact.contactDetails.createdAt];
+        cell.detailTextLabel.text = [self.formatter stringFromDate:self.contact.contactDetails.createdAt];
     } else if (indexPath.row == kUpdatedAtRow) {
-        NSDateFormatter *formatter = [NSDateFormatter new];
-        formatter.dateFormat = @"yyyy-mm-dd MM:hh:ss";
         cell.textLabel.text = NSLocalizedString(@"Updated at", nil);
-        cell.detailTextLabel.text = [formatter stringFromDate:self.contact.contactDetails.updatedAt];
+        cell.detailTextLabel.text = [self.formatter stringFromDate:self.contact.contactDetails.updatedAt];
     }
+}
+
+- (NSDateFormatter *)formatter {
+    if (_formatter == nil) {
+        _formatter = [NSDateFormatter new];
+        _formatter.timeZone = [NSTimeZone timeZoneWithName:@"GMT"];
+        _formatter.dateFormat = @"yy/MM/dd HH:mm:ss";
+    }
+    return _formatter;
 }
 
 - (void)setupTableView {
