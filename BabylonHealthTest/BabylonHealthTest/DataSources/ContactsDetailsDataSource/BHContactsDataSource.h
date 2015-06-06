@@ -11,6 +11,8 @@
 
 @interface BHContactsDataSource : NSObject <UITableViewDataSource>
 
+@property (nonatomic, strong, readonly) NSArray *contacts;
+
 - (void)fetchContactsWithCompletion:(void(^)(void)) completion;
 
 @end

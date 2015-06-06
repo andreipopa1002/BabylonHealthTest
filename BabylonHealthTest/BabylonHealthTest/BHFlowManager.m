@@ -8,8 +8,9 @@
 
 #import "BHFlowManager.h"
 #import "BHContactsViewController.h"
+#import "BHContactDetailsViewController.h"
 
-@interface BHFlowManager()
+@interface BHFlowManager()<BHContactsViewControllerDelegate>
 
 @property (nonatomic, strong, readwrite) UINavigationController *rootViewController;
 
@@ -20,9 +21,17 @@
 - (UINavigationController *)rootViewController {
     if (_rootViewController == nil) {
         BHContactsViewController *contactsViewController = [BHContactsViewController new];
+        contactsViewController.delegate = self;
         _rootViewController = [[UINavigationController alloc] initWithRootViewController:contactsViewController];
     }
     return _rootViewController;
+}
+
+#pragma mark - BHContactsViewControllerDelegate methods
+
+- (void)usedDidSelectContact:(BHContact *)contact {
+    BHContactDetailsViewController *contactDetailsViewController = [[BHContactDetailsViewController alloc] initWithContact:contact];
+    [self.rootViewController pushViewController:contactDetailsViewController animated:YES];
 }
 
 @end

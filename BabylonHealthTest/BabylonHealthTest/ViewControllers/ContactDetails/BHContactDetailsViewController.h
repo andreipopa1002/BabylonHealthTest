@@ -7,7 +7,10 @@
 //
 
 #import "BHBaseViewController.h"
+@class BHContact;
 
 @interface BHContactDetailsViewController : BHBaseViewController
+
+- (instancetype)initWithContact:(BHContact *)contact;
 
 @end

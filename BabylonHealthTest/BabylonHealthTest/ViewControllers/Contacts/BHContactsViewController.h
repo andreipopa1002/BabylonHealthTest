@@ -8,7 +8,16 @@
 
 #import <UIKit/UIKit.h>
 #import "BHBaseViewController.h"
+@class BHContact;
+
+@protocol BHContactsViewControllerDelegate <NSObject>
+
+- (void)usedDidSelectContact:(BHContact *)contact;
+
+@end
 
 @interface BHContactsViewController : BHBaseViewController
+
+@property (nonatomic, weak, readwrite) id<BHContactsViewControllerDelegate> delegate;
 
 @end

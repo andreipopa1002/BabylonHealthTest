@@ -10,6 +10,7 @@
 #import "BHApiClient.h"
 #import "BHCoreDataManager.h"
 #import "BHContact.h"
+#import <AFNetworking/UIImageView+AFNetworking.h>
 
 @interface BHContactsDataSource()
 
@@ -37,7 +38,18 @@
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    return nil;
+    NSString *identifier = @"ContactCell";
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier];
+    if (cell == nil) {
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:identifier];
+    }
+    
+    BHContact *contact = self.contacts[indexPath.row];
+    cell.textLabel.text = contact.firstName;
+    cell.detailTextLabel.text = contact.lastName;
+    [cell.imageView setImageWithURL:[NSURL URLWithString:contact.avatarURL] placeholderImage:[UIImage imageNamed:@"placeholder"]];
+    
+    return cell;
 }
 
 @end
