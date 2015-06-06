@@ -12,16 +12,16 @@
  * This class is intended to encapsulate all the network comunicatinon
  */
 @interface BHApiClient : AFHTTPSessionManager
-
 /**
  *  SharedClient
  *
  *  @return Shared instance for the BHApiClient class
  */
 + (instancetype)sharedClient;
-
 /**
  *  This method will retrieve list of contacts
+ *
+ *  @param callbackBlock completion block that will be excuted when the API call is done
  */
 - (void)retrieveContactListWithCompletion:(void(^)(NSArray *contacts))callbackBlock;
 

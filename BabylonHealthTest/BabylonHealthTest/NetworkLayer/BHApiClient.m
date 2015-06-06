@@ -68,13 +68,21 @@ typedef NS_ENUM(NSInteger, APIHTTPMethod) {
         });
     };
     
-    if (method == APIHTTPMethodGet) {
-        [self GET:path parameters:parameters success:^(NSURLSessionDataTask *task, id responseObject) {
-            successPath(responseObject);
-        } failure:^(NSURLSessionDataTask *task, NSError *error) {
-            errorPath(error);
-        }];
-    }
+    switch (method) {
+        case APIHTTPMethodGet: {
+            [self GET:path parameters:parameters success:^(NSURLSessionDataTask *task, id responseObject) {
+                successPath(responseObject);
+            } failure:^(NSURLSessionDataTask *task, NSError *error) {
+                errorPath(error);
+            }];
+            break;
+        }
+        case APIHTTPMethodPost:
+            break;
+            
+        default:
+            break;
+    }    
 }
 
 # pragma mark - Error handling

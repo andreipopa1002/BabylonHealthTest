@@ -8,9 +8,13 @@
 
 #import <Foundation/Foundation.h>
 @import UIKit;
-
+/**
+ *  This class will controll the UI flow of the app
+ */
 @interface BHFlowManager : NSObject
-
+/**
+ *  the root view controller of the app
+ */
 @property (nonatomic, strong, readonly) UINavigationController *rootViewController;
 
 @end

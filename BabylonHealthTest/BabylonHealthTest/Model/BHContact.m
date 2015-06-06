@@ -11,9 +11,6 @@ NSString *const kContactIdKey = @"id";
     self.contactId = contactDictionary[@"id"];
     self.firstName = contactDictionary[@"first_name"];
     self.lastName = contactDictionary[@"surname"];
-    BHContactDetails *contactDetails = [BHContactDetails contactDetailsFromContactDetailsDictionary:contactDictionary];
-    contactDetails.contact = self;
-    self.contactDetails = contactDetails;
     self.avatarURL = [NSString stringWithFormat:@"http://api.adorable.io/avatar/100/%@",self.contactDetails.email];
 }
 

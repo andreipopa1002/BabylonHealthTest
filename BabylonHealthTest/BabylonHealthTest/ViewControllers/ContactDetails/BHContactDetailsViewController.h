@@ -8,9 +8,17 @@
 
 #import "BHBaseViewController.h"
 @class BHContact;
-
+/**
+ This ViewController will display a the details for a specific contact
+ */
 @interface BHContactDetailsViewController : BHBaseViewController
-
+/**
+ *  Initializes the ViewController with the appropriate contact
+ *
+ *  @param contact BHContact object
+ *
+ *  @return BHContactDetailsViewController instance
+ */
 - (instancetype)initWithContact:(BHContact *)contact;
 
 @end

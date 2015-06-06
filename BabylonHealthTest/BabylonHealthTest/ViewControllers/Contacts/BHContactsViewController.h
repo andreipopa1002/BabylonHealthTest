@@ -15,7 +15,9 @@
 - (void)usedDidSelectContact:(BHContact *)contact;
 
 @end
-
+/**
+ *  This ViewController will display a list of contacts
+ */
 @interface BHContactsViewController : BHBaseViewController
 
 @property (nonatomic, weak, readwrite) id<BHContactsViewControllerDelegate> delegate;

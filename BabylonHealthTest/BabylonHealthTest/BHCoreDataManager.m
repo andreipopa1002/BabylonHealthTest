@@ -109,11 +109,15 @@
                 i++;
             } else {
                 contact = [BHCoreDataManager contactObject];
+                BHContactDetails *contactDetails = [BHCoreDataManager contactDetailsObject];
+                [contactDetails populateWithContactDetailsDictionary:contactDictionary];
+                contact.contactDetails = contactDetails;
+                contactDetails.contact = contact;
                 [contact populateContactWithDictionary:contactDictionary];
             }
             [mutableArray addObject:contact];
         }
-        // remove cardTypes that don't exist anymore
+        // remove contact that don't exist anymore
         [BHCoreDataManager removeEntitiesFromDatabaseWithName:[BHContact entityName] notInKeysArray:keysArray keyName:kContactIdProperty];
         
         [BHCoreDataManager saveContext];

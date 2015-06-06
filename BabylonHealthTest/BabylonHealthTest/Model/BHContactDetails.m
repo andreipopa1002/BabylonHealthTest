@@ -3,12 +3,6 @@
 
 @implementation BHContactDetails
 
-+ (instancetype)contactDetailsFromContactDetailsDictionary:(NSDictionary *)contactDetailsDictionary {
-    BHContactDetails *contactDetails = [BHCoreDataManager contactDetailsObject];
-    [contactDetails populateWithContactDetailsDictionary:contactDetailsDictionary];
-    return contactDetails;
-}
-
 - (void)populateWithContactDetailsDictionary:(NSDictionary *)contactDetailsDictionary {
     self.address = contactDetailsDictionary[@"address"];
     self.phoneNumber = contactDetailsDictionary[@"phone_number"];
