@@ -12,12 +12,10 @@
 
 @interface BHCoreDataManager : NSObject
 
-+ (NSArray *)retrieveMatchingEntitiesFromDatabaseWithName:(NSString *)entityName keysArray:(NSArray *)keysArray keyName:(NSString *)keyName;
-+ (NSArray *)removeEntitiesFromDatabaseWithName:(NSString *)entityName notInKeysArray:(NSArray *)keysArray keyName:(NSString *)keyName;
-+ (void)saveContext;
++ (NSArray *)updateContactsWithContacts:(NSArray *)contactsArray;
++ (NSArray *)getContacts;
 
 + (BHContact *)contactObject;
 + (BHContactDetails *)contactDetailsObject;
-+ (NSArray *)getContacts;
 
 @end

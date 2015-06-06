@@ -24,7 +24,7 @@
 - (void)fetchContactsWithCompletion:(void(^)(void)) completion {
     typeof(self) __weak weakSelf = self;
     [[BHApiClient sharedClient] retrieveContactListWithCompletion:^(NSArray *contacts) {
-        weakSelf.contacts = [BHContact updateContactsWithContacts:contacts];
+        weakSelf.contacts = [BHCoreDataManager updateContactsWithContacts:contacts];
         completion();
     }];
 }

@@ -91,6 +91,36 @@
     return [[BHCoreDataManager sharedManager].managedObjectContext executeFetchRequest:fetchRequest error:&error];
 }
 
++ (NSArray *)updateContactsWithContacts:(NSArray *)contactsArray {
+    if (contactsArray.count > 0) {
+        //Get contacts with matching IDs from database
+        NSArray *keysArray = [contactsArray valueForKeyPath:kContactIdKey];
+        
+        NSMutableArray *mutableArray = [NSMutableArray new];
+        NSArray *matchingContactsArray = [BHCoreDataManager retrieveMatchingEntitiesFromDatabaseWithName:[BHContact entityName] keysArray:keysArray keyName:kContactIdProperty];
+        
+        int i = 0;
+        //Update or insert contact in the database
+        for (NSDictionary *contactDictionary in contactsArray) {
+            BHContact *contact;
+            if (matchingContactsArray.count > i && [contactDictionary[kContactIdKey] compare:((BHContact *)matchingContactsArray[i]).contactId] == NSOrderedSame){
+                contact = matchingContactsArray[i];
+                [contact populateContactWithDictionary:contactDictionary];
+                i++;
+            } else {
+                contact = [BHCoreDataManager contactObject];
+                [contact populateContactWithDictionary:contactDictionary];
+            }
+            [mutableArray addObject:contact];
+        }
+        // remove cardTypes that don't exist anymore
+        [BHCoreDataManager removeEntitiesFromDatabaseWithName:[BHContact entityName] notInKeysArray:keysArray keyName:kContactIdProperty];
+        
+        [BHCoreDataManager saveContext];
+    }
+    return [BHCoreDataManager getContacts];
+}
+
 + (void)saveContext {
     [[BHCoreDataManager sharedManager] saveContext];
 }

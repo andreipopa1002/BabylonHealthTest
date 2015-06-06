@@ -1,7 +1,10 @@
 #import "_Contact.h"
 
+extern NSString *const kContactIdProperty;
+extern NSString *const kContactIdKey;
+
 @interface BHContact : _Contact {}
 
-+ (NSArray *)updateContactsWithContacts:(NSArray *)contactsArray;
+- (void)populateContactWithDictionary:(NSDictionary *)contactDictionary;
 
 @end
