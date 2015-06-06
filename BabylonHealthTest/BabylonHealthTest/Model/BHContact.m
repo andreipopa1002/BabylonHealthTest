@@ -5,12 +5,6 @@
 NSString *const kContactIdProperty = @"contactId";
 NSString *const kContactIdKey = @"id";
 
-@interface BHContact ()
-
-// Private interface goes here.
-
-@end
-
 @implementation BHContact
 
 - (void)populateContactWithDictionary:(NSDictionary *)contactDictionary {

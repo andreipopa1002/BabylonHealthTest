@@ -1,12 +1,6 @@
 #import "BHContactDetails.h"
 #import "BHCoreDataManager.h"
 
-@interface BHContactDetails ()
-
-// Private interface goes here.
-
-@end
-
 @implementation BHContactDetails
 
 + (instancetype)contactDetailsFromContactDetailsDictionary:(NSDictionary *)contactDetailsDictionary {

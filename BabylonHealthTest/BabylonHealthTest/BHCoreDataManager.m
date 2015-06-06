@@ -127,7 +127,6 @@
 
 
 #pragma mark - Core Data stack
-
 @synthesize managedObjectContext = _managedObjectContext;
 @synthesize managedObjectModel = _managedObjectModel;
 @synthesize persistentStoreCoordinator = _persistentStoreCoordinator;
@@ -192,7 +191,6 @@
 }
 
 #pragma mark - Core Data Saving support
-
 - (void)saveContext {
     NSManagedObjectContext *managedObjectContext = self.managedObjectContext;
     if (managedObjectContext != nil) {

@@ -39,7 +39,6 @@
 }
 
 #pragma mark - UITableViewDelegateMethods
-
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     if (self.delegate != nil && [self.delegate respondsToSelector:@selector(usedDidSelectContact:)]) {
         [tableView deselectRowAtIndexPath:indexPath animated:NO];

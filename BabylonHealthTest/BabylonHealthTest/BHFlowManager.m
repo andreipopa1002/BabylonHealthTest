@@ -28,7 +28,6 @@
 }
 
 #pragma mark - BHContactsViewControllerDelegate methods
-
 - (void)usedDidSelectContact:(BHContact *)contact {
     BHContactDetailsViewController *contactDetailsViewController = [[BHContactDetailsViewController alloc] initWithContact:contact];
     [self.rootViewController pushViewController:contactDetailsViewController animated:YES];

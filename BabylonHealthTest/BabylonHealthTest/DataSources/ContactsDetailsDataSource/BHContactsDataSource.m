@@ -29,9 +29,6 @@
     }];
 }
 
-#pragma mark - Internal Methods
-
-
 #pragma mark - UITableViewDataSource Methods
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     return self.contacts.count;
