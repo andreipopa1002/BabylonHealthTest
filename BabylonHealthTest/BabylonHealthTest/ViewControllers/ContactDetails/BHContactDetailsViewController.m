@@ -18,7 +18,7 @@ static CGFloat const kEmailRow = 3;
 static CGFloat const kCreatedAtRow = 4;
 static CGFloat const kUpdatedAtRow = 5;
 
-static CGFloat const kNumberOfRows = 5;
+static CGFloat const kNumberOfRows = 6;
 
 @interface BHContactDetailsViewController ()<UITableViewDataSource>
 

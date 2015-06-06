@@ -245,16 +245,8 @@
 				C9EB69AD1B21E4770024A251 /* BHCoreDataManager.h */,
 				C9EB69AE1B21E4770024A251 /* BHCoreDataManager.m */,
 				C9EB69B21B21E6EB0024A251 /* ContactsDetailsDataSource */,
-				C9EB69B11B21E6CC0024A251 /* ContactsDataSource */,
 			);
 			path = DataSources;
-			sourceTree = "<group>";
-		};
-		C9EB69B11B21E6CC0024A251 /* ContactsDataSource */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ContactsDataSource;
 			sourceTree = "<group>";
 		};
 		C9EB69B21B21E6EB0024A251 /* ContactsDetailsDataSource */ = {
