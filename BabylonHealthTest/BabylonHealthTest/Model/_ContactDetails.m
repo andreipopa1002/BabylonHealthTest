@@ -22,7 +22,7 @@ const struct ContactDetailsRelationships ContactDetailsRelationships = {
 
 + (id)insertInManagedObjectContext:(NSManagedObjectContext*)moc_ {
 	NSParameterAssert(moc_);
-	return [NSEntityDescription insertNewObjectForEntityForName:@"ContactDetails" inManagedObjectContext:moc_];
+	return [NSEntityDescription insertNewObjectForEntityForName:@"BHContactDetails" inManagedObjectContext:moc_];
 }
 
 + (NSString*)entityName {

@@ -7,10 +7,13 @@
 //
 
 #import "BHContactsViewController.h"
+#import "BHContactsDataSource.h"
 
 @interface BHContactsViewController ()
 
 @property (nonatomic, strong, readwrite) IBOutlet UITableView *tableView;
+
+@property (nonatomic, strong, readwrite) BHContactsDataSource *dataSource;
 
 @end
 
@@ -18,7 +21,19 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+    [self setupTableView];
+}
+
+#pragma mark - Internal methods
+- (void)setupTableView {
+    self.dataSource = [BHContactsDataSource new];
+    self.tableView.dataSource = self.dataSource;
+    [self showLoadingIndicator];
+    typeof(self) __weak weakSelf = self;
+    [self.dataSource fetchContactsWithCompletion:^{
+        [weakSelf hideLoadingIndicator];
+        [weakSelf.tableView reloadData];
+    }];
 }
 
 @end

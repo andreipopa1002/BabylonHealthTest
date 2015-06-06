@@ -5,6 +5,7 @@
 
 const struct ContactAttributes ContactAttributes = {
 	.avatarURL = @"avatarURL",
+	.contactId = @"contactId",
 	.firstName = @"firstName",
 	.lastName = @"lastName",
 };
@@ -20,7 +21,7 @@ const struct ContactRelationships ContactRelationships = {
 
 + (id)insertInManagedObjectContext:(NSManagedObjectContext*)moc_ {
 	NSParameterAssert(moc_);
-	return [NSEntityDescription insertNewObjectForEntityForName:@"Contact" inManagedObjectContext:moc_];
+	return [NSEntityDescription insertNewObjectForEntityForName:@"BHContact" inManagedObjectContext:moc_];
 }
 
 + (NSString*)entityName {
@@ -39,10 +40,36 @@ const struct ContactRelationships ContactRelationships = {
 + (NSSet*)keyPathsForValuesAffectingValueForKey:(NSString*)key {
 	NSSet *keyPaths = [super keyPathsForValuesAffectingValueForKey:key];
 
+	if ([key isEqualToString:@"contactIdValue"]) {
+		NSSet *affectingKey = [NSSet setWithObject:@"contactId"];
+		keyPaths = [keyPaths setByAddingObjectsFromSet:affectingKey];
+		return keyPaths;
+	}
+
 	return keyPaths;
 }
 
 @dynamic avatarURL;
+
+@dynamic contactId;
+
+- (int64_t)contactIdValue {
+	NSNumber *result = [self contactId];
+	return [result longLongValue];
+}
+
+- (void)setContactIdValue:(int64_t)value_ {
+	[self setContactId:[NSNumber numberWithLongLong:value_]];
+}
+
+- (int64_t)primitiveContactIdValue {
+	NSNumber *result = [self primitiveContactId];
+	return [result longLongValue];
+}
+
+- (void)setPrimitiveContactIdValue:(int64_t)value_ {
+	[self setPrimitiveContactId:[NSNumber numberWithLongLong:value_]];
+}
 
 @dynamic firstName;
 

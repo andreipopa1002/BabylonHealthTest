@@ -27,6 +27,7 @@
 		C9EB69BC1B2328050024A251 /* _ContactDetails.m in Sources */ = {isa = PBXBuildFile; fileRef = C9EB69B61B2328050024A251 /* _ContactDetails.m */; };
 		C9EB69BD1B2328050024A251 /* BHContact.m in Sources */ = {isa = PBXBuildFile; fileRef = C9EB69B81B2328050024A251 /* BHContact.m */; };
 		C9EB69BE1B2328050024A251 /* BHContactDetails.m in Sources */ = {isa = PBXBuildFile; fileRef = C9EB69BA1B2328050024A251 /* BHContactDetails.m */; };
+		C9EB69C21B232C9A0024A251 /* BHContactsDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = C9EB69C11B232C9A0024A251 /* BHContactsDataSource.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +78,8 @@
 		C9EB69B81B2328050024A251 /* BHContact.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BHContact.m; sourceTree = "<group>"; };
 		C9EB69B91B2328050024A251 /* BHContactDetails.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BHContactDetails.h; sourceTree = "<group>"; };
 		C9EB69BA1B2328050024A251 /* BHContactDetails.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BHContactDetails.m; sourceTree = "<group>"; };
+		C9EB69C01B232C9A0024A251 /* BHContactsDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BHContactsDataSource.h; sourceTree = "<group>"; };
+		C9EB69C11B232C9A0024A251 /* BHContactsDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BHContactsDataSource.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -208,10 +211,10 @@
 		C90F48701B21D17200B4FBBD /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				C90F48771B21D35900B4FBBD /* Contacts */,
-				C90F48831B21DC5F00B4FBBD /* ContactDetails */,
 				C90F48711B21D1C400B4FBBD /* BHBaseViewController.h */,
 				C90F48721B21D1C400B4FBBD /* BHBaseViewController.m */,
+				C90F48771B21D35900B4FBBD /* Contacts */,
+				C90F48831B21DC5F00B4FBBD /* ContactDetails */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -257,6 +260,8 @@
 		C9EB69B21B21E6EB0024A251 /* ContactsDetailsDataSource */ = {
 			isa = PBXGroup;
 			children = (
+				C9EB69C01B232C9A0024A251 /* BHContactsDataSource.h */,
+				C9EB69C11B232C9A0024A251 /* BHContactsDataSource.m */,
 			);
 			path = ContactsDetailsDataSource;
 			sourceTree = "<group>";
@@ -422,6 +427,7 @@
 				C90F48491B21C5D000B4FBBD /* BabylonHealthTest.xcdatamodeld in Sources */,
 				C90F48871B21DCD500B4FBBD /* BHContactDetailsViewController.m in Sources */,
 				C90F48731B21D1C400B4FBBD /* BHBaseViewController.m in Sources */,
+				C9EB69C21B232C9A0024A251 /* BHContactsDataSource.m in Sources */,
 				C90F48801B21D3A900B4FBBD /* BHContactsViewController.m in Sources */,
 				C9EB69AF1B21E4770024A251 /* BHCoreDataManager.m in Sources */,
 				C90F48761B21D34800B4FBBD /* BHFlowManager.m in Sources */,

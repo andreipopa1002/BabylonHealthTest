@@ -25,9 +25,6 @@
     self.window.rootViewController = self.flowManager.rootViewController;
     [self.window makeKeyAndVisible];
     
-    [[BHApiClient sharedClient] retrieveContactListWithCompletion:^(NSArray *contacts) {
-        NSLog(@"contact: %@",contacts);
-    }];
     return YES;
 }
 

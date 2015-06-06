@@ -15,7 +15,7 @@ extern const struct ContactDetailsRelationships {
 	__unsafe_unretained NSString *contact;
 } ContactDetailsRelationships;
 
-@class Contact;
+@class BHContact;
 
 @interface ContactDetailsID : NSManagedObjectID {}
 @end
@@ -46,7 +46,7 @@ extern const struct ContactDetailsRelationships {
 
 //- (BOOL)validateUpdatedAt:(id*)value_ error:(NSError**)error_;
 
-@property (nonatomic, strong) Contact *contact;
+@property (nonatomic, strong) BHContact *contact;
 
 //- (BOOL)validateContact:(id*)value_ error:(NSError**)error_;
 
@@ -69,7 +69,7 @@ extern const struct ContactDetailsRelationships {
 - (NSDate*)primitiveUpdatedAt;
 - (void)setPrimitiveUpdatedAt:(NSDate*)value;
 
-- (Contact*)primitiveContact;
-- (void)setPrimitiveContact:(Contact*)value;
+- (BHContact*)primitiveContact;
+- (void)setPrimitiveContact:(BHContact*)value;
 
 @end

@@ -8,6 +8,8 @@
 
 #import "BHCoreDataManager.h"
 #import <CoreData/CoreData.h>
+#import "BHContact.h"
+#import "BHContactDetails.h"
 
 @interface BHCoreDataManager()
 
@@ -27,6 +29,72 @@
     });
     return _sharedManager;
 }
+
++ (BHContact *)contactObject {
+    return [NSEntityDescription insertNewObjectForEntityForName:[BHContact entityName] inManagedObjectContext:[BHCoreDataManager sharedManager].managedObjectContext];
+}
+
++ (BHContactDetails *)contactDetailsObject {
+    return [NSEntityDescription insertNewObjectForEntityForName:[BHContactDetails entityName] inManagedObjectContext:[BHCoreDataManager sharedManager].managedObjectContext];
+}
+
++ (NSArray *)retrieveMatchingEntitiesFromDatabaseWithName:(NSString *)entityName keysArray:(NSArray *)keysArray keyName:(NSString *)keyName  {
+    if (!keysArray) return nil;
+    
+    NSManagedObjectContext *context = [BHCoreDataManager sharedManager].managedObjectContext;
+    
+    NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] init];
+    fetchRequest.sortDescriptors = @[[NSSortDescriptor sortDescriptorWithKey:keyName ascending:YES]];
+    fetchRequest.predicate = [NSPredicate predicateWithFormat:[NSString stringWithFormat:@"%@ in (%%@)", keyName], keysArray];
+    
+    NSEntityDescription *entity = [NSEntityDescription entityForName:entityName inManagedObjectContext:context];
+    [fetchRequest setEntity:entity];
+    
+    NSError *error;
+    NSArray *resultsArray = [context executeFetchRequest:fetchRequest error:&error];
+    return resultsArray;
+}
+
++ (NSArray *)removeEntitiesFromDatabaseWithName:(NSString *)entityName notInKeysArray:(NSArray *)keysArray keyName:(NSString *)keyName  {
+    NSManagedObjectContext *context = [BHCoreDataManager sharedManager].managedObjectContext;
+    
+    NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] init];
+    NSEntityDescription *entity = [NSEntityDescription entityForName:entityName inManagedObjectContext:context];
+    [fetchRequest setEntity:entity];
+    
+    if (keysArray && keyName) {
+        fetchRequest.sortDescriptors = @[[NSSortDescriptor sortDescriptorWithKey:keyName ascending:YES]];
+        fetchRequest.predicate = [NSPredicate predicateWithFormat:[NSString stringWithFormat:@"not (%@ in (%%@))", keyName], keysArray];
+    }
+    
+    NSError *error;
+    NSArray *resultsArray = [context executeFetchRequest:fetchRequest error:&error];
+    NSArray *idsToDelete = nil;
+    if (keysArray && keyName) {
+        idsToDelete = [resultsArray valueForKeyPath:keyName];
+    }
+    
+    for (NSManagedObject *info in resultsArray) {
+        [context deleteObject:info];
+    }
+    
+    return ![context save:&error] ? nil : idsToDelete;
+}
+
++ (NSArray *)getContacts {
+    NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] init];
+    NSError *error;
+    
+    NSEntityDescription *entity = [NSEntityDescription entityForName:[BHContact entityName] inManagedObjectContext:[BHCoreDataManager sharedManager].managedObjectContext];
+    [fetchRequest setEntity:entity];
+    
+    return [[BHCoreDataManager sharedManager].managedObjectContext executeFetchRequest:fetchRequest error:&error];
+}
+
++ (void)saveContext {
+    [[BHCoreDataManager sharedManager] saveContext];
+}
+
 
 #pragma mark - Core Data stack
 

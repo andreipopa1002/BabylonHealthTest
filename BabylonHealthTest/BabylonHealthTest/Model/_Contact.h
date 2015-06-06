@@ -5,6 +5,7 @@
 
 extern const struct ContactAttributes {
 	__unsafe_unretained NSString *avatarURL;
+	__unsafe_unretained NSString *contactId;
 	__unsafe_unretained NSString *firstName;
 	__unsafe_unretained NSString *lastName;
 } ContactAttributes;
@@ -13,7 +14,7 @@ extern const struct ContactRelationships {
 	__unsafe_unretained NSString *contactDetails;
 } ContactRelationships;
 
-@class ContactDetails;
+@class BHContactDetails;
 
 @interface ContactID : NSManagedObjectID {}
 @end
@@ -28,6 +29,14 @@ extern const struct ContactRelationships {
 
 //- (BOOL)validateAvatarURL:(id*)value_ error:(NSError**)error_;
 
+@property (nonatomic, strong) NSNumber* contactId;
+
+@property (atomic) int64_t contactIdValue;
+- (int64_t)contactIdValue;
+- (void)setContactIdValue:(int64_t)value_;
+
+//- (BOOL)validateContactId:(id*)value_ error:(NSError**)error_;
+
 @property (nonatomic, strong) NSString* firstName;
 
 //- (BOOL)validateFirstName:(id*)value_ error:(NSError**)error_;
@@ -36,7 +45,7 @@ extern const struct ContactRelationships {
 
 //- (BOOL)validateLastName:(id*)value_ error:(NSError**)error_;
 
-@property (nonatomic, strong) ContactDetails *contactDetails;
+@property (nonatomic, strong) BHContactDetails *contactDetails;
 
 //- (BOOL)validateContactDetails:(id*)value_ error:(NSError**)error_;
 
@@ -47,13 +56,19 @@ extern const struct ContactRelationships {
 - (NSString*)primitiveAvatarURL;
 - (void)setPrimitiveAvatarURL:(NSString*)value;
 
+- (NSNumber*)primitiveContactId;
+- (void)setPrimitiveContactId:(NSNumber*)value;
+
+- (int64_t)primitiveContactIdValue;
+- (void)setPrimitiveContactIdValue:(int64_t)value_;
+
 - (NSString*)primitiveFirstName;
 - (void)setPrimitiveFirstName:(NSString*)value;
 
 - (NSString*)primitiveLastName;
 - (void)setPrimitiveLastName:(NSString*)value;
 
-- (ContactDetails*)primitiveContactDetails;
-- (void)setPrimitiveContactDetails:(ContactDetails*)value;
+- (BHContactDetails*)primitiveContactDetails;
+- (void)setPrimitiveContactDetails:(BHContactDetails*)value;
 
 @end

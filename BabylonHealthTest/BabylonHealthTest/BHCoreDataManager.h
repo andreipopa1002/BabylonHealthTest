@@ -7,12 +7,17 @@
 //
 
 #import <Foundation/Foundation.h>
+@class BHContact;
+@class BHContactDetails;
 
 @interface BHCoreDataManager : NSObject
 
-+ (instancetype)sharedManager;
++ (NSArray *)retrieveMatchingEntitiesFromDatabaseWithName:(NSString *)entityName keysArray:(NSArray *)keysArray keyName:(NSString *)keyName;
++ (NSArray *)removeEntitiesFromDatabaseWithName:(NSString *)entityName notInKeysArray:(NSArray *)keysArray keyName:(NSString *)keyName;
++ (void)saveContext;
 
-- (void)saveContext;
-- (NSURL *)applicationDocumentsDirectory;
++ (BHContact *)contactObject;
++ (BHContactDetails *)contactDetailsObject;
++ (NSArray *)getContacts;
 
 @end
