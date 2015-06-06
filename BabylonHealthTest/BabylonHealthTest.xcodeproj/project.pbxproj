@@ -22,8 +22,11 @@
 		C90F48811B21D3A900B4FBBD /* BHContactsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C90F487F1B21D3A900B4FBBD /* BHContactsViewController.xib */; };
 		C90F48871B21DCD500B4FBBD /* BHContactDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C90F48851B21DCD500B4FBBD /* BHContactDetailsViewController.m */; };
 		C90F48881B21DCD500B4FBBD /* BHContactDetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C90F48861B21DCD500B4FBBD /* BHContactDetailsViewController.xib */; };
-		C9EB69AB1B21E2BE0024A251 /* BHContactDetails.m in Sources */ = {isa = PBXBuildFile; fileRef = C9EB69A81B21E2BE0024A251 /* BHContactDetails.m */; };
-		C9EB69AC1B21E2BE0024A251 /* BHContact.m in Sources */ = {isa = PBXBuildFile; fileRef = C9EB69AA1B21E2BE0024A251 /* BHContact.m */; };
+		C9EB69AF1B21E4770024A251 /* BHCoreDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C9EB69AE1B21E4770024A251 /* BHCoreDataManager.m */; };
+		C9EB69BB1B2328050024A251 /* _Contact.m in Sources */ = {isa = PBXBuildFile; fileRef = C9EB69B41B2328050024A251 /* _Contact.m */; };
+		C9EB69BC1B2328050024A251 /* _ContactDetails.m in Sources */ = {isa = PBXBuildFile; fileRef = C9EB69B61B2328050024A251 /* _ContactDetails.m */; };
+		C9EB69BD1B2328050024A251 /* BHContact.m in Sources */ = {isa = PBXBuildFile; fileRef = C9EB69B81B2328050024A251 /* BHContact.m */; };
+		C9EB69BE1B2328050024A251 /* BHContactDetails.m in Sources */ = {isa = PBXBuildFile; fileRef = C9EB69BA1B2328050024A251 /* BHContactDetails.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,10 +67,16 @@
 		C90F48841B21DCD500B4FBBD /* BHContactDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BHContactDetailsViewController.h; sourceTree = "<group>"; };
 		C90F48851B21DCD500B4FBBD /* BHContactDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BHContactDetailsViewController.m; sourceTree = "<group>"; };
 		C90F48861B21DCD500B4FBBD /* BHContactDetailsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BHContactDetailsViewController.xib; sourceTree = "<group>"; };
-		C9EB69A71B21E2BE0024A251 /* BHContactDetails.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BHContactDetails.h; path = BabylonHealthTest/Model/BHContactDetails.h; sourceTree = SOURCE_ROOT; };
-		C9EB69A81B21E2BE0024A251 /* BHContactDetails.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BHContactDetails.m; path = BabylonHealthTest/Model/BHContactDetails.m; sourceTree = SOURCE_ROOT; };
-		C9EB69A91B21E2BE0024A251 /* BHContact.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BHContact.h; path = BabylonHealthTest/Model/BHContact.h; sourceTree = SOURCE_ROOT; };
-		C9EB69AA1B21E2BE0024A251 /* BHContact.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BHContact.m; path = BabylonHealthTest/Model/BHContact.m; sourceTree = SOURCE_ROOT; };
+		C9EB69AD1B21E4770024A251 /* BHCoreDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BHCoreDataManager.h; path = ../BHCoreDataManager.h; sourceTree = "<group>"; };
+		C9EB69AE1B21E4770024A251 /* BHCoreDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BHCoreDataManager.m; path = ../BHCoreDataManager.m; sourceTree = "<group>"; };
+		C9EB69B31B2328050024A251 /* _Contact.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _Contact.h; sourceTree = "<group>"; };
+		C9EB69B41B2328050024A251 /* _Contact.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _Contact.m; sourceTree = "<group>"; };
+		C9EB69B51B2328050024A251 /* _ContactDetails.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _ContactDetails.h; sourceTree = "<group>"; };
+		C9EB69B61B2328050024A251 /* _ContactDetails.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _ContactDetails.m; sourceTree = "<group>"; };
+		C9EB69B71B2328050024A251 /* BHContact.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BHContact.h; sourceTree = "<group>"; };
+		C9EB69B81B2328050024A251 /* BHContact.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BHContact.m; sourceTree = "<group>"; };
+		C9EB69B91B2328050024A251 /* BHContactDetails.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BHContactDetails.h; sourceTree = "<group>"; };
+		C9EB69BA1B2328050024A251 /* BHContactDetails.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BHContactDetails.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,6 +143,7 @@
 				C90F48451B21C5D000B4FBBD /* AppDelegate.m */,
 				C90F48741B21D34800B4FBBD /* BHFlowManager.h */,
 				C90F48751B21D34800B4FBBD /* BHFlowManager.m */,
+				C9EB69B01B21E6A10024A251 /* DataSources */,
 				C90F48701B21D17200B4FBBD /* ViewControllers */,
 				C90F486F1B21D15500B4FBBD /* Model */,
 				C90F486B1B21CBB500B4FBBD /* NetworkLayer */,
@@ -183,13 +193,16 @@
 		C90F486F1B21D15500B4FBBD /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				C9EB69A71B21E2BE0024A251 /* BHContactDetails.h */,
-				C9EB69A81B21E2BE0024A251 /* BHContactDetails.m */,
-				C9EB69A91B21E2BE0024A251 /* BHContact.h */,
-				C9EB69AA1B21E2BE0024A251 /* BHContact.m */,
+				C9EB69B31B2328050024A251 /* _Contact.h */,
+				C9EB69B41B2328050024A251 /* _Contact.m */,
+				C9EB69B51B2328050024A251 /* _ContactDetails.h */,
+				C9EB69B61B2328050024A251 /* _ContactDetails.m */,
+				C9EB69B71B2328050024A251 /* BHContact.h */,
+				C9EB69B81B2328050024A251 /* BHContact.m */,
+				C9EB69B91B2328050024A251 /* BHContactDetails.h */,
+				C9EB69BA1B2328050024A251 /* BHContactDetails.m */,
 			);
-			name = Model;
-			path = ../../../../../Model;
+			path = Model;
 			sourceTree = "<group>";
 		};
 		C90F48701B21D17200B4FBBD /* ViewControllers */ = {
@@ -223,6 +236,31 @@
 			path = ContactDetails;
 			sourceTree = "<group>";
 		};
+		C9EB69B01B21E6A10024A251 /* DataSources */ = {
+			isa = PBXGroup;
+			children = (
+				C9EB69AD1B21E4770024A251 /* BHCoreDataManager.h */,
+				C9EB69AE1B21E4770024A251 /* BHCoreDataManager.m */,
+				C9EB69B21B21E6EB0024A251 /* ContactsDetailsDataSource */,
+				C9EB69B11B21E6CC0024A251 /* ContactsDataSource */,
+			);
+			path = DataSources;
+			sourceTree = "<group>";
+		};
+		C9EB69B11B21E6CC0024A251 /* ContactsDataSource */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ContactsDataSource;
+			sourceTree = "<group>";
+		};
+		C9EB69B21B21E6EB0024A251 /* ContactsDetailsDataSource */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ContactsDetailsDataSource;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -235,6 +273,7 @@
 				C90F483A1B21C5D000B4FBBD /* Frameworks */,
 				C90F483B1B21C5D000B4FBBD /* Resources */,
 				FAAB357585D37EA5F93CDC02 /* Copy Pods Resources */,
+				C9EB69BF1B232A6C0024A251 /* Mogenerator  */,
 			);
 			buildRules = (
 			);
@@ -338,6 +377,20 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
+		C9EB69BF1B232A6C0024A251 /* Mogenerator  */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Mogenerator ";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if [ \"${CONFIGURATION}\" == \"Debug\" ]; then\necho \"Running Mogenerator\"\nmogenerator -m BabylonHealthTest/BabylonHealthTest.xcdatamodeld/ -O BabylonHealthTest/Model/ --template-var arc=true\necho \"Finished Mogenerator\"\nelse\necho \"Skipping Mogenerator\"\nfi";
+		};
 		FAAB357585D37EA5F93CDC02 /* Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -360,16 +413,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C9EB69BB1B2328050024A251 /* _Contact.m in Sources */,
 				C90F486E1B21CC0900B4FBBD /* BHApiClient.m in Sources */,
 				C90F48461B21C5D000B4FBBD /* AppDelegate.m in Sources */,
-				C9EB69AC1B21E2BE0024A251 /* BHContact.m in Sources */,
+				C9EB69BE1B2328050024A251 /* BHContactDetails.m in Sources */,
 				C90F48431B21C5D000B4FBBD /* main.m in Sources */,
+				C9EB69BD1B2328050024A251 /* BHContact.m in Sources */,
 				C90F48491B21C5D000B4FBBD /* BabylonHealthTest.xcdatamodeld in Sources */,
 				C90F48871B21DCD500B4FBBD /* BHContactDetailsViewController.m in Sources */,
 				C90F48731B21D1C400B4FBBD /* BHBaseViewController.m in Sources */,
 				C90F48801B21D3A900B4FBBD /* BHContactsViewController.m in Sources */,
-				C9EB69AB1B21E2BE0024A251 /* BHContactDetails.m in Sources */,
+				C9EB69AF1B21E4770024A251 /* BHCoreDataManager.m in Sources */,
 				C90F48761B21D34800B4FBBD /* BHFlowManager.m in Sources */,
+				C9EB69BC1B2328050024A251 /* _ContactDetails.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
