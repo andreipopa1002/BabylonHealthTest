@@ -1,5 +1,5 @@
-# BabylonHealthTest
-Employment test for Babylon Health
+# BHT
+Employment test
 
 Using the API endpoint
 GET http://fast-gorge.herokuapp.com/contacts
