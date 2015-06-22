@@ -7,11 +7,12 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "BHContact.h"
 @import UIKit;
 /**
  *  This class will act as the data source for a table view that displays contacts
  */
-@interface BHContactsDataSource : NSObject <UITableViewDataSource>
+@interface BHContactsDataSource : NSObject
 
 @property (nonatomic, strong, readonly) NSArray *contacts;
 /**

@@ -8,12 +8,14 @@
 
 #import "BHContactsViewController.h"
 #import "BHContactsDataSource.h"
+#import "BHContactsDataSourceDelegate.h"
 
 @interface BHContactsViewController ()<UITableViewDelegate>
 
 @property (nonatomic, strong, readwrite) IBOutlet UITableView *tableView;
 
 @property (nonatomic, strong, readwrite) BHContactsDataSource *dataSource;
+@property (nonatomic, strong, readwrite) BHContactsDataSourceDelegate *dataSourceDelegate;
 
 @end
 
@@ -28,7 +30,8 @@
 #pragma mark - Internal methods
 - (void)setupTableView {
     self.dataSource = [BHContactsDataSource new];
-    self.tableView.dataSource = self.dataSource;
+    self.dataSourceDelegate = [[BHContactsDataSourceDelegate alloc] initWithDataSource:self.dataSource];
+    self.tableView.dataSource = self.dataSourceDelegate;
     self.tableView.delegate = self;
     [self showLoadingIndicator];
     typeof(self) __weak weakSelf = self;
